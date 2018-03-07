@@ -4,8 +4,8 @@
 const char* ssid="ZST";
 const char* password="aaaaaaaa";
 
-const char* host = "http://traveljogja.esy.es/saklar.php";
-String path = "http://traveljogja.esy.es/light.json";
+const char* host = "http://yourhost/saklar.html";
+String path = "http://yourhost.com/light.json";
 
 const int lampu = 2;
 
