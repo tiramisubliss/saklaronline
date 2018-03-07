@@ -1,0 +1,46 @@
+<?php
+$lampu = $_GET['lampu'];
+	if($lampu == "on"){
+		$file = fopen("lampu.json","w") or die("File tidak ada");
+		fwrite($file,'{"lampu":"on"}');
+		fclose($file);
+}
+	else if($lampu == "off"){
+		$file = fopen("lampu.json","w") or die ("File tidak ada");
+		fwrite($file,'{"lampu":"off"}');
+		fclose($file);
+		}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Saklar Online IoT</title>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https/maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="row" style="margin-top: 20px;">
+	<div class="col-md-8 col-md-offset-2">
+		<a href="?lampu=on" class="btn btn-success btn-block btn-lg">Nyalakan</a>
+		<br>
+		<a href="?lampu=off" class="led btn btn-danger btn-block btn-lg">Matikan</a>
+		<br>
+		<div class="light-status well" style="margin-top: 5px; text-align: center;">
+			<?php
+			if($lampu == "on"){
+				echo("Nyalakan Lampu");
+			}
+			else if($lampu == "off"){
+				echo("Matikan Lampu");
+			}
+			?>
+		
+		</div>
+		</div>
+		</div>
+</body>
+</html>
