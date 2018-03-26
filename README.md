@@ -1,5 +1,5 @@
 # saklaronline
-Make your own simple smarthome
+Make your own simple Smart Home
 
 ## Dependency
 * NodeMCU / WEMOS 
@@ -14,6 +14,6 @@ Make your own simple smarthome
 $ git clone git@github.com:tiramisubliss/saklaronline.git
 $ cd sakalronline
 ```
-* Upload your saklar_online.ino file to your arduino ide and change with your configuration about wireless and host.
-* Go to your own hosting and upload "saklar.html" to your own hosting, 
+* Upload your saklar_online.ino file to your Arduino IDE and change with your configuration about wireless and host.
+* Go and upload "saklar.html" to your own hosting.
 * Access http://yourhost/saklar.html to control your lamp and that automatically generate lampu.json file.
