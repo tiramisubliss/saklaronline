@@ -5,7 +5,7 @@ const char* ssid="ZST";
 const char* password="aaaaaaaa";
 
 const char* host = "http://yourhost/saklar.html";
-String path = "http://yourhost.com/light.json";
+String path = "http://yourhost.com/lampu.json";
 
 const int lampu = 2;
 
